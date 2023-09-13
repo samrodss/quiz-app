@@ -139,12 +139,12 @@ export default {
   width: 80%;
   margin-top: 0.5rem;
   .answer-container {
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0.5rem 0;
+    margin: 0.5rem auto;
     padding: 1rem;
     border-radius: 0.5rem;
     color: #f0f8ff;
@@ -153,6 +153,10 @@ export default {
 
     &:hover {
       background-color: #2900b0;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
     }
   }
 }
@@ -180,7 +184,7 @@ input[type='radio'] {
 }
 
 button.send {
-  width: 80%;
+  width: 40%;
   margin: 1rem auto;
   border: none;
   padding: 1rem;
@@ -189,6 +193,10 @@ button.send {
   color: #f0f8ff;
   font-weight: bolder;
   cursor: pointer;
+
+  @media (max-width: 600px) {
+    width: 80%;
+  }
 }
 
 .result {
